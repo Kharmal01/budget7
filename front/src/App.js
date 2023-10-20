@@ -3,17 +3,17 @@ import './App.css';
 
 function App() {
   return (
-    <div class="vertical-align">
-      <div class="espace">
-        <button id="precedent"> ⬅ </button>
-        <h1>Janvier</h1>
-        <button id="suivant"> ➡ </button>
+    <div className="vertical-align">
+      <div className="space-between">
+        <button className="btn btn-primary" id="precedent"> ⬅ </button>
+        <h3>Janvier</h3>
+        <button className="btn btn-primary btn-add" id="suivant"> ➡ </button>
       </div>
-      <div class="horizontal-align">
+      <div className="horizontal-align">
 
-        <div class="card w-96 bg-base-100 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">Dépenses</h2>
+        <div className="card w-96 bg-base-100 shadow-xl" id="gauche">
+          <div className="card-body">
+            <h2 className="card-title">Dépenses</h2>
             <table>
               <tr> 
                   <th>Montant</th> 
@@ -21,51 +21,64 @@ function App() {
                   <th>Catégorie</th> 
               </tr>
             </table>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary" id="ajout"> + </button>
+            <div className="card-actions justify-end">
+              <button className="btn btn-primary" id="ajout"> + </button>
             </div>
           </div>
         </div>
 
-        <div class="card w-96 bg-base-100 shadow-xl">
-          <div class="piechart">
+        <div id="droite">
+          <div className="piechart card w-96 bg-base-100 shadow-xl">
+            <div className="card-body">
+              <h1>pieChart</h1>
+            </div>
           </div>
-          <table>
-              <tr> 
-                  <th>Dépenses</th> 
-                  <th id="depenses">0</th> 
-              </tr>
-              <tr> 
-                  <th>Revenu</th> 
-                  <th id="revenu">0</th> 
-              </tr>
-              <tr> 
-                  <th>Résultat</th> 
-                  <th id="résultat">0</th> 
-              </tr>
-          </table>
-          <table>
-            <caption>Mois des dernieres années</caption>
-            <tr> 
-              <td colspan="2">2021</td> 
-              <td colspan="2">2022</td>
-              <td colspan="2">2023</td> 
-            </tr>
-              <tr>
+          <div className="card w-96 bg-base-100 shadow-xl">
+            <div className="card-body">
+              <table>
+                  <tr> 
+                      <th>Dépenses</th> 
+                      <th id="depenses">0</th> 
+                  </tr>
+                  <tr> 
+                      <th>Revenu</th> 
+                      <th id="revenu">0</th> 
+                  </tr>
+                  <tr> 
+                      <th>Résultat</th> 
+                      <th id="résultat">0</th> 
+                  </tr>
+              </table>
+            </div>
+          </div>
+          
+          <div className="card w-96 bg-base-100 shadow-xl">
+            <div className="card-body">
+              <h2 className="card-title">Mois des dernieres années</h2>
+              <table>
                 <tr> 
-                  <th>Dépenses</th> 
-                  <th id="depenses">0</th> 
+                  <td>2021</td> 
+                  <td>2022</td>
+                  <td>2023</td> 
                 </tr>
-                <tr> 
-                  <th>Revenu</th> 
-                  <th id="revenu">0</th> 
-                </tr>
-                <tr> 
-                  <th>Résultat</th> 
-                  <th id="résultat">0</th> 
-                </tr>
-              </tr>
-          </table>
+                  <tr>
+                    <tr> 
+                      <th>Dépenses</th> 
+                      <th id="depenses">0</th> 
+                    </tr>
+                    <tr> 
+                      <th>Revenu</th> 
+                      <th id="revenu">0</th> 
+                    </tr>
+                    <tr> 
+                      <th>Résultat</th> 
+                      <th id="résultat">0</th> 
+                    </tr>
+                  </tr>
+              </table>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
