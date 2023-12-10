@@ -30,3 +30,5 @@ Front:
 * RightSection.js : module parent des modules SummaryTable et RecentMonthsTable
 * SummaryTable.js : module qui affiche le total des dépenses, revenus et résultat du mois
 * RecentMonthsTable.js : module qui affiche les mêmes informations pour le même mois des années précédentes
+
+##By CAMIN Matteo & COLOME Charlotte
