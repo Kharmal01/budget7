@@ -3,6 +3,7 @@ const prisma = new prismaModule.PrismaClient()
 
 module.exports = { prisma };
 
+// For Testing purposes
 async function hardData() {
 
     await prisma.depenses.deleteMany();

@@ -13,7 +13,6 @@ app.listen(3000, function () {
 
 app.use(express.static(__dirname + '/../front/build'));
 
-//prisma.hardData() //for testing
 
 app.get('/:annee/:mois', async (req, res) => {
   const { annee, mois } = req.params;
